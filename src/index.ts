@@ -64,11 +64,15 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           {
             type: "text",
             text: `
-I have successfully ran command "${command}" in local shell. 
+I have ran command "${command}" in local shell. 
 The status code returned by the shell was: ${result.code}. \n
 The stdout of that command was the following: \n
 \`\`\`
 ${result.stdout}
+\`\`\`
+The stderr of that command was the following: \n
+\`\`\`
+${result.stderr}
 \`\`\`
             `,
           },
