@@ -22,7 +22,7 @@ Add this to your `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "filesystem": {
+    "run-commands": {
       "command": "<PATH TO LOCAL NODE>",
       "args": [
         "<PATH TO GIT CLONE FOLDER>/server-run-commands/build"
